@@ -12,7 +12,7 @@ package com.ochafik.swing.syntaxcoloring;
  * XML token marker.
  *
  * @author Slava Pestov
- * @version $Id: XMLTokenMarker.java,v 1.2 1999/12/13 03:40:30 sp Exp $
+ * @version $Id: XMLTokenMarker.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  */
 @SuppressWarnings({})
 public class XMLTokenMarker extends HTMLTokenMarker

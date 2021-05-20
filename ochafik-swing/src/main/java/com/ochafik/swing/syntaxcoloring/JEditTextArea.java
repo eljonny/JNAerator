@@ -88,7 +88,7 @@ import javax.swing.undo.UndoableEdit;
  *     + "}");</pre>
  *
  * @author Slava Pestov
- * @version $Id: JEditTextArea.java,v 1.36 1999/12/13 03:40:30 sp Exp $
+ * @version $Id: JEditTextArea.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  */
 @SuppressWarnings("serial")
 public class JEditTextArea extends JComponent

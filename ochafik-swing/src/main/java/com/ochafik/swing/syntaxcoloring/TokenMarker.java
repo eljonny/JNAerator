@@ -20,7 +20,7 @@ import javax.swing.text.Segment;
  * cached.
  *
  * @author Slava Pestov
- * @version $Id: TokenMarker.java,v 1.32 1999/12/13 03:40:30 sp Exp $
+ * @version $Id: TokenMarker.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  *
  * @see Token
  */

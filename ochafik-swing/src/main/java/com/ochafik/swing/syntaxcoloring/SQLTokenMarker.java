@@ -5,7 +5,7 @@ import javax.swing.text.Segment;
  * SQL token marker.
  *
  * @author mike dillon
- * @version $Id: SQLTokenMarker.java,v 1.6 1999/04/19 05:38:20 sp Exp $
+ * @version $Id: SQLTokenMarker.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  */
 public class SQLTokenMarker extends TokenMarker
 {

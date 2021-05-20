@@ -5,7 +5,7 @@ import javax.swing.text.Segment;
  * Shell script token marker.
  *
  * @author Slava Pestov
- * @version $Id: ShellScriptTokenMarker.java,v 1.18 1999/12/13 03:40:30 sp Exp $
+ * @version $Id: ShellScriptTokenMarker.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  */
 public class ShellScriptTokenMarker extends TokenMarker
 {

@@ -5,7 +5,7 @@ import javax.swing.text.Segment;
  * Python token marker.
  *
  * @author Jonathan Revusky
- * @version $Id: PythonTokenMarker.java,v 1.3 1999/12/14 04:20:35 sp Exp $
+ * @version $Id: PythonTokenMarker.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  */
 public class PythonTokenMarker extends TokenMarker
 {

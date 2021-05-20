@@ -5,7 +5,7 @@ import javax.swing.text.Segment;
  * PHP token marker.
  *
  * @author Clancy Malcolm
- * @version $Id: PHPTokenMarker.java,v 1.1 1999/12/14 04:20:35 sp Exp $
+ * @version $Id: PHPTokenMarker.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  */
 public class PHPTokenMarker extends TokenMarker
 {

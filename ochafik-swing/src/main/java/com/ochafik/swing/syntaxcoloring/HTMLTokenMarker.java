@@ -5,7 +5,7 @@ import javax.swing.text.Segment;
  * HTML token marker.
  *
  * @author Slava Pestov
- * @version $Id: HTMLTokenMarker.java,v 1.34 1999/12/13 03:40:29 sp Exp $
+ * @version $Id: HTMLTokenMarker.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  */
 public class HTMLTokenMarker extends TokenMarker
 {

@@ -5,7 +5,7 @@ package com.ochafik.swing.syntaxcoloring;
  *
  * @author Slava Pestov
  * @author Juha Lindfors
- * @version $Id: IDLTokenMarker.java,v 1.2 1999/12/18 06:10:56 sp Exp $
+ * @version $Id: IDLTokenMarker.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  */
 public class IDLTokenMarker extends CTokenMarker
 {

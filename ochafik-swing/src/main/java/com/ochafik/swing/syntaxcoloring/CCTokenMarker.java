@@ -4,7 +4,7 @@ package com.ochafik.swing.syntaxcoloring;
  * C++ token marker.
  *
  * @author Slava Pestov
- * @version $Id: CCTokenMarker.java,v 1.6 1999/12/13 03:40:29 sp Exp $
+ * @version $Id: CCTokenMarker.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  */
 public class CCTokenMarker extends CTokenMarker
 {

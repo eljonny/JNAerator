@@ -13,7 +13,7 @@ import javax.swing.text.Segment;
  * TeX token marker.
  *
  * @author Slava Pestov
- * @version $Id: TeXTokenMarker.java,v 1.16 1999/12/13 03:40:30 sp Exp $
+ * @version $Id: TeXTokenMarker.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  */
 public class TeXTokenMarker extends TokenMarker
 {

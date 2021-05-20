@@ -4,7 +4,7 @@ package com.ochafik.swing.syntaxcoloring;
  * JavaScript token marker.
  *
  * @author Slava Pestov
- * @version $Id: JavaScriptTokenMarker.java,v 1.3 1999/12/13 03:40:29 sp Exp $
+ * @version $Id: JavaScriptTokenMarker.java 4757 2020-10-21 03:03:21Z jhyry@PCISVN $
  */
 public class JavaScriptTokenMarker extends CTokenMarker
 {
