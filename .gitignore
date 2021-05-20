@@ -2,3 +2,9 @@ target
 project/boot
 project/target
 *~
+*.gradle/
+*bin/
+*.classpath
+*.project
+*org.eclipse.buildship.core.prefs
+*build/

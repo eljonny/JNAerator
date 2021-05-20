@@ -1,0 +1,29 @@
+pluginManagement{
+    resolutionStrategy {
+        eachPlugin {
+            logger.info("Evaluating Plugin: id=${requested.id.id} version=${requested.version} name=${requested.id.name} namespace=${requested.id.namespace}")
+            if (requested.id.id == 'com.github.spotbugs') {
+                String realPluginModule = "gradle.plugin.com.github.spotbugs.snom:spotbugs-gradle-plugin:${requested.version}"
+                logger.info("Applying plugin with ID ${requested.id.id}: $realPluginModule")
+                useModule(realPluginModule)
+            }
+        }
+    }
+
+    repositories {
+        mavenLocal()
+    }
+}
+
+includeBuild('../gradle-velocity-plugin')
+includeBuild('../jalico')
+
+rootProject.name = 'jnaerator-parent'
+
+include('anarres-jnaerator')
+include('jnaerator')
+include('jnaerator-parser')
+include('jnaerator-rococoa-runtime')
+include('jnaerator-runtime')
+include('ochafik-swing')
+include('ochafik-util')

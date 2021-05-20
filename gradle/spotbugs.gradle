@@ -1,0 +1,26 @@
+apply plugin: 'com.github.spotbugs'
+
+spotbugs {
+    toolVersion = '4.2.3'
+    ignoreFailures = true
+    excludeFilter = file('src/main/resources/spotbugs-exclusion-filters.xml')
+    showProgress = true
+    showStackTraces = true
+    effort = 'max'
+    reportLevel = 'medium'
+    maxHeapSize = '4g'
+}
+
+spotbugsMain {
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
+
+spotbugsTest {
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}

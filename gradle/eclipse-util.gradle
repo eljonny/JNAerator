@@ -1,0 +1,54 @@
+def spotBugsEclipseProjectsList = [
+    'anarres-jnaerator',
+    'jnaerator',
+    'jnaerator-parser',
+    'jnaerator-rococoa-runtime',
+    'jnaerator-runtime',
+    'ochafik-swing',
+    'ochafik-util',
+]
+
+def filterCpEntryFn = { source ->
+    def filterIt = source.kind == 'src' && filterPathEndsWith.any { suffix ->
+        source.path.endsWith(suffix)
+    }
+
+    if (filterIt) {
+        logger.info("${project.name}::Filtered out build path source entry ${source.path}")
+    }
+
+    return filterIt
+}
+
+def setUpSourceFolderFn = { source ->
+    if (
+        source.kind == 'src' && (
+            ioctPathEndsWith.any { suffix ->
+                source.path.endsWith(suffix)
+            } || ioctPathContains.any { inter ->
+                source.path.contains(inter)
+            }
+        )
+    )
+    {
+        logger.info("${project.name}::Found generated/third-party source entry $source")
+        source.entryAttributes['ignore_optional_problems'] = 'true'
+    }
+}
+
+ext {
+    filterPathEndsWith = ['velocity']
+
+    ioctPathEndsWith = ['-gen']
+    ioctPathContains = [
+        'generated',
+        'third-party',
+        'antlr'
+    ]
+
+    spotBugsEclipseProjects =
+            spotBugsEclipseProjectsList
+
+    setUpSourceFolder = setUpSourceFolderFn
+    filterCpEntry = filterCpEntryFn
+}

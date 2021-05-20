@@ -35,6 +35,9 @@
 		  <plugin>
 		    <groupId>org.antlr</groupId>
 		    <artifactId>antlr3-maven-plugin</artifactId>
+			<configuration>
+				<sourceDirectory>${basedir}/src/main/antlr</sourceDirectory>
+			</configuration>
 		  </plugin>
 		</plugins>
 	</build>

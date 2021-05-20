@@ -1,5 +1,13 @@
-// Synthetic typedefs from -Tfoo=bar arguments.
 
-typedef short __be16;
+void ComplexArgFunction(
+        struct { 
+                union { 
+                        enum { A, B } e; 
+                        float f; 
+                } u; 
+                long v; 
+                void (*fptr)(); 
+        }* pArg
+);
 
-
+void f(void (*arg)());
