@@ -6,9 +6,10 @@
    <!-- All bugs in test classes, except for JUnit-specific bugs -->
    <Match>
       <Or>
-         <Class name="~.*\.*Test" />
-         <Class name="~.*\.*TestIntegration" />
-         <Class name="~.*\.*Suite" />
+         <Class name="~.*Test" />
+         <Class name="~.*Test\$.*" />
+         <Class name="~.*TestIntegration" />
+         <Class name="~.*Suite" />
       </Or>
       <Not>
          <Bug code="IJU" />
