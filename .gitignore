@@ -8,3 +8,4 @@ project/target
 *.project
 *org.eclipse.buildship.core.prefs
 *build/
+*.log
