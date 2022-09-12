@@ -1,13 +1,10 @@
 
-void ComplexArgFunction(
-        struct { 
-                union { 
-                        enum { A, B } e; 
-                        float f; 
-                } u; 
-                long v; 
-                void (*fptr)(); 
-        }* pArg
-);
+typedef struct _S {
+	int a;
+} S;
 
-void f(void (*arg)());
+void fv(S);
+void fv_(_S);
+
+void fp(S*);
+void fp_(_S*);
